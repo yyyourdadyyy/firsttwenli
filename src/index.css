@@ -19,6 +19,7 @@ body {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -59,34 +60,105 @@ button {
   padding: 2vh 2vw 2vh 2vw;
 }
 /* Catalog */
-.parent {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 10px;
-  margin-top: 100px;
+
+.main-catalog {
+  margin-top: 75px;
 }
-.div1 {
-  grid-area: 1 / 1 / 5 / 5;
+
+.rows-slide {
+  display: flex;
+  justify-content: space-between;
 }
-.div2 {
-  grid-area: 1 / 5 / 5 / 8;
-  background: #333232;
+
+.img-slide {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: 65%;
+  box-sizing: border-box;
 }
-.title {
-  font-size: 36pt;
+
+.text-slide {
+  width: 35%;
+}
+
+.btn-price-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.price {
+  font-size: 2.8rem;
+}
+
+.slide {
+  width: 100%;
+  background-color: #333333;
+  border-radius: 40px;
+  padding: 60px 60px;
+}
+
+.title-slide {
   font-weight: bold;
-  text-align: left;
+  font-size: 4.2rem;
 }
+
+.decr-title-slide {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
 .vis-img {
   background-image: url(../public/vis.png);
   background-size: 38vw 32vh;
   width: 38vw;
   height: 32vh;
 }
-.button-price {
+
+.catalog-product {
+  margin-top: 70px;
+}
+
+.img-block-product {
+  background-color: #333333;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.inner-catalog-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+}
+
+.info-prodcut {
   display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title-price-product {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.title-product {
+  font-size: 1.8rem;
+}
+
+.price-producut {
+  font-size: 1.6rem;
+}
+
+.link-prodcut {
+  font-size: 1rem;
+  color : #8B4FFC;
 }
 
 /* MAIN PAGE */
@@ -104,10 +176,11 @@ button {
   margin-top: 9rem;
 }
 
-.text-main, .img-main-block {
-  flex: 1;              
-  width: 50%;           
-  box-sizing: border-box; 
+.text-main,
+.img-main-block {
+  flex: 1;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 .text-main {
@@ -115,14 +188,13 @@ button {
 }
 
 .decr-title-main {
-  font-size : 1.3rem;
-  line-height : 32px;
+  font-size: 1.3rem;
+  line-height: 32px;
   margin-top: 45px;
 }
 
 .main-btn {
-  font-size : 1.3rem;
+  font-size: 1.3rem;
   margin-top: 45px;
-  line-height : 32px;
+  line-height: 32px;
 }
-

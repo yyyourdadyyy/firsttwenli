@@ -6,9 +6,9 @@ import{NavLink} from "react-router-dom"
 export const Header = () => {
 
 
-  const activeStyle = {
-    color:'#FFF',
-  }
+const activeStyle = {
+  color: '#FFF'
+};
 
   return (
     <header>
