@@ -28,9 +28,7 @@ const activeStyle = {
                 style={({isActive})=> isActive ? activeStyle : undefined}
                 >О нас</NavLink></li>
         </ul>
-        <button>
-          Заказать
-        </button>
+        <a class="buy" href="/Order">Заказать</a>
 
   </header>
   )

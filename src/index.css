@@ -30,9 +30,10 @@ header {
 }
 .logo {
   background-image: url("../public/logo.png");
-  background-size: 100px 100px;
-  width: 100px;
-  height: 100px;
+  background-size: 132px 145px;
+  width: 132px;
+  height: 145px;
+  background-repeat: no-repeat;
 }
 .menu {
   display: flex;
@@ -51,13 +52,17 @@ NavLink {
   text-decoration: none;
   color: #fff;
 }
-button {
+button,.buy{
   background: #8a4efc;
   color: #fff;
   border-radius: 50px;
   border: none;
   text-align: center;
   padding: 2vh 2vw 2vh 2vw;
+}
+
+.btn-main-block {
+  margin-top: 80px;
 }
 /* Catalog */
 
@@ -118,7 +123,7 @@ button {
 }
 
 .catalog-product {
-  margin-top: 70px;
+  margin: 70px 0px 120px 0px;
 }
 
 .img-block-product {
@@ -173,7 +178,7 @@ button {
 .rows-img-text {
   display: flex;
   justify-content: space-between;
-  margin-top: 9rem;
+  align-items: center;
 }
 
 .text-main,
@@ -181,6 +186,7 @@ button {
   flex: 1;
   width: 50%;
   box-sizing: border-box;
+  max-width: 50%;
 }
 
 .text-main {
@@ -197,4 +203,172 @@ button {
   font-size: 1.3rem;
   margin-top: 45px;
   line-height: 32px;
+}
+
+/* ORDER */ 
+
+.rows-main-order {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  height: 80vh;
+}
+
+.form-order {
+  display: flex;
+  flex-direction: column;
+  padding: 79px 70px;
+  background-color: #9054F8;
+  border-radius: 27px;
+}
+
+.form-order h2 {
+  font-size: 33px;
+  line-height: 43px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.form-order label {
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 16px;
+  margin: 25px 0px 15px 0px;
+}
+
+.form-order input  {
+  border-radius: 40px !important;
+  padding: 12px 30px;
+  font-size: 17px ;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.btn-form-block {
+  display: flex;
+  justify-content: right;
+  margin-top: 43px;
+}
+
+.btn-form-block input {
+  padding: 17px 15px;
+  color: #9054F8;
+  background-color: white;
+  cursor: pointer;
+}
+
+.country {
+  color: black;
+}
+
+.form-control  {
+  font-size: 16px !important;
+}
+
+option {
+  color: black;
+}
+
+.css-13cymwt-control {
+  border-radius: 39px !important;
+  padding: 7px 5px;
+  font-size: 16px;
+}
+
+.css-qbdosj-Input {
+  color: #8a4efc !important;
+}
+
+.custom-select {
+  font-size: 16px;
+  color: #333
+}
+
+.custom-select-option {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.css-tj5bde-Svg {
+  padding: 5px;
+  background-color: #9054F8;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* LENDING */ 
+
+.rows-lending-decr {
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+  align-items: center;
+}
+
+.flex1,
+.flex2 {
+  flex: 1;
+  width: 50%;
+  box-sizing: border-box;
+  max-width: 50%;
+}
+
+.title-page-services {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 71px;
+  line-height: 43.57px;
+}
+
+ol {
+  list-style:decimal !important;
+  padding-left: 23px;
+}
+
+.flex2 li {
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.price-order-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* 404 ERROR */ 
+
+.block-error {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-error {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  align-items: center;
+}
+
+.title-error {
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 240px;
+}
+
+.pre-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.decr-title {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 45px;
 }

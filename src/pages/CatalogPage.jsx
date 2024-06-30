@@ -1,7 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'; // Основные стили Swiper
-import 'swiper/swiper-bundle'; // Основные компоненты Swiper
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper-bundle'; 
+import { Link } from 'react-router-dom'; 
 
 export const CatalogPage = () => {
   return (
@@ -11,7 +12,7 @@ export const CatalogPage = () => {
      <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          loop={true} // Петля
+          loop={true}
         >
           <SwiperSlide className='slide'>
             <div className="rows-slide">
@@ -21,7 +22,7 @@ export const CatalogPage = () => {
                 Сайт-визитка предназначен для представления  вашей компании, организации, персонального  бренда или проекта в интернете
                 </p>
                 <div className="btn-price-slide">
-                  <button className="buy">Заказать</button>
+                  <Link className="buy" to="/Order">Заказать</Link>
                   <p className="price">45 000 &#8376;</p>
                 </div>
               </div>
@@ -36,7 +37,7 @@ export const CatalogPage = () => {
                 Сайт-визитка предназначен для представления  вашей компании, организации, персонального  бренда или проекта в интернете
                 </p>
                 <div className="btn-price-slide">
-                  <button className="buy">Заказать</button>
+                <Link className="buy" to="/Order">Заказать</Link>
                   <p className="price">45 000 &#8376;</p>
                 </div>
               </div>
@@ -51,7 +52,7 @@ export const CatalogPage = () => {
                 Сайт-визитка предназначен для представления  вашей компании, организации, персонального  бренда или проекта в интернете
                 </p>
                 <div className="btn-price-slide">
-                  <button className="buy">Заказать</button>
+                <Link className="buy" to="/Order">Заказать</Link>
                   <p className="price">45 000 &#8376;</p>
                 </div>
               </div>
@@ -66,7 +67,7 @@ export const CatalogPage = () => {
                 Сайт-визитка предназначен для представления  вашей компании, организации, персонального  бренда или проекта в интернете
                 </p>
                 <div className="btn-price-slide">
-                  <button className="buy">Заказать</button>
+                <Link className="buy" to="/Order">Заказать</Link>
                   <p className="price">45 000 &#8376;</p>
                 </div>
               </div>
@@ -79,50 +80,50 @@ export const CatalogPage = () => {
         <div className="inner-catalog-product">
           <div className="product-block">
             <div className="img-block-product">
-              
+              <img src="catalog.png" alt="pc" />
             </div>
             <div className="info-prodcut">
             <div className="title-price-product">
               <h2 className="title-product">Сайт-лендинг</h2>
               <h3 className="price-producut">35 000 &#8376;</h3>
               </div>
-              <a href="#" className="link-prodcut">Подробнее</a>
+              <Link className="link-prodcut" to="/lending">Подробнее</Link>
             </div>
           </div>
           <div className="product-block">
             <div className="img-block-product">
-              
+            <img src="catalog.png" alt="pc" />
             </div>
             <div className="info-prodcut">
             <div className="title-price-product">
               <h2 className="title-product">Сайт-лендинг</h2>
               <h3 className="price-producut">35 000 &#8376;</h3>
               </div>
-              <a href="#" className="link-prodcut">Подробнее</a>
+              <Link className="link-prodcut" to="/lending">Подробнее</Link>
             </div>
           </div>
           <div className="product-block">
             <div className="img-block-product">
-              
+            <img src="catalog.png" alt="pc" />
             </div>
             <div className="info-prodcut">
               <div className="title-price-product">
               <h2 className="title-product">Сайт-лендинг</h2>
               <h3 className="price-producut">35 000 &#8376;</h3>
               </div>
-              <a href="#" className="link-prodcut">Подробнее</a>
+              <Link className="link-prodcut" to="/lending">Подробнее</Link>
             </div>
           </div>
           <div className="product-block">
             <div className="img-block-product">
-              
+            <img src="catalog.png" alt="pc" />
             </div>
             <div className="info-prodcut">
               <div className="title-price-product">
                 <h2 className="title-product">Сайт-лендинг</h2>
               <h3 className="price-producut">35 000 &#8376;</h3>
               </div>
-              <a href="#" className="link-prodcut">Подробнее</a>
+              <Link className="link-prodcut" to="/lending">Подробнее</Link>
             </div>
           </div>
           

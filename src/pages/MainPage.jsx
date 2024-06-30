@@ -13,11 +13,11 @@ export const MainPage = () => {
             Наша команда готова воплатить в жизнь ваши идеи  и предложить качественное решение для вашего бизнеса
             </p>
             <div className="btn-main-block">
-              <button className="main-btn">Продолжить</button>
+              <a class="buy" href="/catalog">Продолжить</a>
             </div>
           </div>
           <div className="img-main-block">
-            <img src="" alt="Элюстрация роста" />
+            <img src="bar_chart.png" alt="Элюстрация роста" />
           </div>
         </div>
       </div>
