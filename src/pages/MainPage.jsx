@@ -21,6 +21,27 @@ export const MainPage = () => {
           </div>
         </div>
       </div>
+      <div className="menu-mobilu">
+        <div className="inner-mobilu-menu">
+          <div className="link-page">
+            <div className="link-block-menu">
+            <img src="home-icons.svg" alt="icons" />
+            <a href="#">Главная</a>
+            </div>
+            <div className="link-block-menu">
+            <img src="catalog-icons.png" alt="icons" />
+            <a href="#">Каталог</a>
+            </div>
+            <div className="link-block-menu">
+            <img src="o-icons.png" alt="icons" />
+            <a href="#">О нас</a>
+            </div>
+           <div className="link-block-menu zakaz-menu">
+           <a href="#">Заказать</a>
+           </div>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }

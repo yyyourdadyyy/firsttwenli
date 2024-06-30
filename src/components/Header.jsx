@@ -11,7 +11,8 @@ const activeStyle = {
 };
 
   return (
-    <header>
+   <div className="header">
+     <header>
         <div className="logo">
         </div>
         <ul className="menu">
@@ -28,8 +29,9 @@ const activeStyle = {
                 style={({isActive})=> isActive ? activeStyle : undefined}
                 >О нас</NavLink></li>
         </ul>
-        <a class="buy" href="/Order">Заказать</a>
+        <a class="buy header-buy" href="/Order">Заказать</a>
 
   </header>
+   </div>
   )
 }
